@@ -1,0 +1,55 @@
+/*StAuth10244: I William Derksen, 000834722 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else.*/
+body {
+    background-color: #F5F5F5;
+}
+
+.table-responsive {
+    display: table;
+}
+
+.price {
+    text-align: right;
+}
+
+/*Move the header text away from navbar, align with headerPic*/
+#headerText {
+    position: relative;
+    top: 10px;
+    margin-left: 1%
+}
+
+#headerPic {
+    width: 11%;
+    min-width: 150px
+}
+
+/*remove border of last td*/
+tr:last-child>td {
+    border-bottom: 0px;
+}
+
+#gameImg {
+    width: 99%;
+}
+
+/*remove the game img below the lg breakpoint*/
+@media screen and (max-width: 992px) {
+    #gameImg {
+        display: none;
+    }
+}
+
+/*768px = md breakpoint*/
+@media screen and (max-width: 768px) {
+    #headerText {
+        font-size: 28px
+    }
+
+    #headerPic {
+        padding-top: 8px;
+    }
+
+    h3 {
+        font-size: 20px
+    }
+}
